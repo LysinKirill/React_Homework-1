@@ -8,7 +8,7 @@ namespace Camelize {
             [Key in keyof ObjType as CamelizeString<Key & string>]: Camelize<ObjType[Key]>;
         }
         : ObjType;
-    
+
     type TestType = {
         first_name: string;
         last_name: string;
